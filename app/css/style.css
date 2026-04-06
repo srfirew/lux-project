@@ -11,6 +11,7 @@
 @theme {
   --font-inter: var(--font-inter), sans-serif;
   --font-nacelle: var(--font-nacelle), sans-serif;
+  --font-space: var(--font-monospace), monospace;
 
   --text-xs: 0.8125rem;
   --text-xs--line-height: 1.5384;
@@ -91,3 +92,10 @@
     border-color: var(--color-gray-200, currentColor);
   }
 }
+
+@layer base {
+  .font-space {
+    font-family: 'Space Mono', monospace;
+  }
+}
+

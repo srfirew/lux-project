@@ -1,20 +1,30 @@
 import Image from "next/image";
 import WorflowImg01 from "@/public/images/workflow-01.png";
-import WorflowImg02 from "@/public/images/workflow-02.png";
-import WorflowImg03 from "@/public/images/workflow-03.png";
 import Spotlight from "@/components/spotlight";
 
 export default function Workflows() {
   return (
-    <section>
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+    <>
+      {/* Wave divider */}
+      <svg
+        className="w-full h-auto"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M0,40 Q300,0 600,40 T1200,40 L1200,120 L0,120 Z"
+          fill="rgb(249, 250, 251)"
+        />
+      </svg>
+      <section className="bg-gray-50">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="pb-12 md:pb-20">
           {/* Section header */}
-          <div className="mx-auto max-w-3xl pb-15 text-center md:pb-15">
+          <div className="mx-auto max-w-3xl pb-15 mt-15 text-center md:pb-15 md:mt-15">
             <h2 className="pb-4 font-nacelle text-3xl font-semibold text-black/80 md:text-4xl">
               Jogue em 3 passos simples
             </h2>
-            <p className="text-lg text-black/80">
+            <p style={{fontFamily: "monospace"}} className="text-lg text-black/80">
               Sem instalação. Sem espera. Só jogar.
             </p>
           </div>
@@ -38,11 +48,11 @@ export default function Workflows() {
                 <div className="relative z-10 p-6">
                   <div className="mb-3 text-center">
                     <span className="text-white text-base font-semibold">
-                      ESCOLHA SEU JOGO
+                      {"01. ESCOLHA SUA BIBLIOTECA "}
                     </span>
                   </div>
                   <p className="text-indigo-200/65">
-                    Conecte sua conta Steam, Epic Games e outras plataformas. Todos os seus jogos já comprados, disponíveis na hora.
+                    {'{ "Conecte sua conta Steam, Epic Games e outras plataformas. Todos os seus jogos já comprados, disponíveis na hora." }'}
                   </p>
                 </div>
               </div>
@@ -65,11 +75,11 @@ export default function Workflows() {
                 <div className="relative z-10 p-6">
                   <div className="mb-3 text-center">
                     <span className="text-white text-base font-semibold">
-                      CONECTE EM QUALQUER TELA
+                      {"02. CONECTE EM QUALQUER TELA"}
                     </span>
                   </div>
                   <p className="text-indigo-200/65">
-                    Celular, tablet, TV ou PC. Se tem navegador, você já pode jogar.
+                    {'{ "Celular, tablet, TV ou PC. Se tem navegador, você já pode jogar." }'}
                   </p>
                 </div>
               </div>
@@ -92,11 +102,11 @@ export default function Workflows() {
                 <div className="relative z-10 p-6">
                   <div className="mb-3 text-center">
                     <span className="text-white text-base font-semibold">
-                      COMECE A JOGAR
+                      {"03. COMECE A JOGAR"}
                     </span>
                   </div>
                   <p className="text-indigo-200/65">
-                    Latência abaixo de 20ms. Gráficos em alta qualidade. Experiência de console na nuvem.
+                    {'{ "Latência abaixo de 20ms. Gráficos em alta qualidade. Experiência de console e computador na nuvem." }'}
                   </p>
                 </div>
               </div>
@@ -105,5 +115,6 @@ export default function Workflows() {
         </div>
       </div>
     </section>
+    </>
   );
 }

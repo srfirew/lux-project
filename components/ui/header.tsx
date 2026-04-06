@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header className="z-30 mt-2 w-full md:mt-5">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="relative flex h-14 items-center justify-between gap-3 rounded-2xl bg-gray-900/20 px-3 ">
+        <div className="relative flex h-14 items-center justify-between gap-3 rounded-2xl bg-gray-900/10 px-3 ">
           {/* Site branding */}
           <div className="relative z-10 flex flex-1 items-center">
             <Logo />

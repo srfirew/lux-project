@@ -11,7 +11,7 @@ export default function AuthLayout({
   return (
     <main className="relative flex grow flex-col">
       <ScrollToTop />
-      <PageIllustration multiple />
+      <PageIllustration/>
 
       {children}
     </main>
