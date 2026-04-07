@@ -3,16 +3,14 @@ export const metadata = {
   description: "Page description",
 };
 
-import PageIllustration from "@/components/page-illustration";
-import Hero from "@/components/hero-home";
-import Workflows from "@/components/workflows";
+import Home from "@/components/home";
+import Workflows from "@/components/guide-start";
 import Features from "@/components/features";
 
-export default function Home() {
+export default function Page() {
   return (
     <>
-      <PageIllustration />
-      <Hero />
+      <Home />
       <Workflows />
       <Features />
     </>

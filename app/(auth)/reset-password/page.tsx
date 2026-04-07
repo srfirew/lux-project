@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Reset Password - Open PRO",
+  title: "Lux - Resetar senha",
   description: "Page description",
 };
 
@@ -13,28 +13,28 @@ export default function ResetPassword() {
           {/* Section header */}
           <div className="pb-12 text-center">
             <h1 className="font-nacelle text-3xl font-semibold text-black md:text-4xl">
-              Reset your password
+              Resetar sua senha
             </h1>
           </div>
           {/* Contact form */}
           <form className="mx-auto max-w-[400px]">
             <div>
               <label
-                className="mb-1 block text-sm font-medium text-indigo-200/65"
+                className="mb-1 block text-sm font-medium text-indigo-500"
                 htmlFor="email"
               >
-                Email
+                E-mail
               </label>
               <input
                 id="email"
                 type="email"
                 className="form-input w-full"
-                placeholder="Your email"
+                placeholder="Seu e-mail"
               />
             </div>
             <div className="mt-6">
               <button className="btn w-full bg-linear-to-t from-indigo-600 to-indigo-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_--theme(--color-white/.16)] hover:bg-[length:100%_150%]">
-                Reset Password
+                Resetar senha
               </button>
             </div>
           </form>

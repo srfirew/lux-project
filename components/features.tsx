@@ -13,15 +13,10 @@ export default function Features() {
         <div className="border-t py-12 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-400/.25),transparent)1] md:py-20">
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-4 text-center md:pb-12">
-            <div className="inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-linear-to-r before:from-transparent before:to-indigo-200/50 after:h-px after:w-8 after:bg-linear-to-l after:from-transparent after:to-indigo-200/50">
-              <span className="inline-flex text-black">
-                Controles avançados
-              </span>
-            </div>
             <h2 className="pb-4 font-nacelle text-3xl font-semibold text-black/80 md:text-4xl">
               Controle e Vantagens
             </h2>
-            <p className="text-lg text-gray-400">
+            <p className="text-lg text-dark-80">
               Controle total, do seu jeito.
               A Lux vai além do simples jogar. Explore configurações avançadas, personalize sua experiência e descubra vantagens pensadas para quem leva os games a sério.
             </p>

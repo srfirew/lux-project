@@ -1,6 +1,7 @@
 import VideoThumb from "@/public/images/hero-image-01.jpg";
+import TypingEffect from "@/components/typing-effect";
 
-export default function HeroHome() {
+export default function Home() {
   return (
     <section>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -12,7 +13,9 @@ export default function HeroHome() {
               className="text-black/80 bg-[length:200%_auto] bg-clip-text font-space pb-5 text-4xl md:text-5xl"
               data-aos="fade-up"
             >
-              <span className="font-semibold">{"</Lux>"}</span>
+              <span className="font-semibold">
+                <TypingEffect text="Bem-vindo ao Lux" speed={300} />
+              </span>
             </h1>
             
             <div className="mx-auto max-w-3xl">
@@ -22,7 +25,7 @@ export default function HeroHome() {
                 data-aos="fade-up"
                 data-aos-delay={200}
               >
-                {"// Sem console. Sem limites. Jogue qualquer jogo, em qualquer tela, a qualquer hora. Lux - game é na nuvem."}
+                {"Sem console. Sem limites. Jogue qualquer jogo, em qualquer tela, a qualquer hora. Lux - game é na nuvem."}
 
               </p>
               <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
